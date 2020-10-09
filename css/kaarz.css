@@ -5,19 +5,17 @@
 h1,h2,h3,h4 {
     font-family: 'Times New Roman', Times, serif;
 }
-body {
-    
-}
 nav {
     position: fixed;
-    padding: 10px;
     width: 100%;
-    background-color: #fbbe4b;
+    background-color: white;
+    height: 80px;
+    border-bottom: 1px solid ghostwhite;
+    z-index: 50;
 }
 .brandName {
-    width: 30%;
-    color: goldenrod;
-    float: left;
+    padding: 10px 30px;
+
 }
 .brandName img {
     border-radius: 50%;
@@ -30,49 +28,53 @@ nav {
 nav ul {
     float: right;
     width: 45%;
-    margin: 30px 0;
-    
+    padding: 10px 5px;   
 }
 nav ul li {
     list-style-type: none;
     display: inline;
-    margin: 5px;
+    margin: 5px 10px;
     font-size: 1em;
-    
 }
 nav ul li a:link {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 nav ul li a:visited {
-    color: white;
+    color: black;
 }
-nav ul li :hover {
+nav ul li a:hover {
     padding: 10px;
-    background-color: #0b031b;
+    background-color:#fbbe4b;
     color: white;
     border-radius: 10px;
 }
 nav ul li :active {
     padding: 10px;
     background-color: goldenrod;
-    color: white;
+    color: black;
 }
-
 .hrr {
     clear: both;
     visibility: hidden;
 }
 
 /*HOME*/
+
 #home {
-    margin-top: 7%;
+    margin-top: 5%;
     background-image: url('../images/carz.png');
     background-repeat: no-repeat;
     height: 600px;
     background-size: cover;
-
-
+    position: relative;
+}
+.overlay {
+    background-color: rgb(128, 128, 128, 0.5);
+    position:absolute;
+    width: 100%;
+    height: 600px;
+    
 }
 .hom {
     padding: 50px;
@@ -82,7 +84,15 @@ nav ul li :active {
     font-size: 1.5em;
     color: white;
     display: inline;
-
+}
+.homeB {
+    font-size: 1.5em;
+    color: #fbbe4b;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: ;
+    border: 1px solid white;
+    display:inline;
 }
 .ome {
     border: 1px solid white;
@@ -149,18 +159,29 @@ nav ul li :active {
 
 /*PARTNERS*/
 .partner {
-   margin-right: auto;
-   margin-left: auto;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
     
 }
 .partNote {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .partNote h2 {
     font-weight: 800;
-    font-size: 1.5em;
+    font-size: 3em;
+}
+.saless img{
+    width: 160px;
+    height: 120px;
+}
+.saless {
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*GALLERY*/
@@ -179,8 +200,8 @@ nav ul li :active {
     text-align: center;    
     color: black;
     font-weight: 800;
-    margin-bottom: 1.5%;
-    margin-top: 1.5%;
+    margin-bottom: .5%;
+    margin-top: 2%;
     font-size: 1.5em;
     padding: 20px 0;  
 }
@@ -192,11 +213,27 @@ nav ul li :active {
 }
 .galCard h4 {
     font-size: 1.2em;
+    margin-bottom: 30px;
 }
 .galCard img {
     width: 90%; 
     height: 150px;
     padding: 10px;
+}
+.moreCars {
+    padding: 20px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fbbe4b;
+    transition-duration: 0.6s;
+    color: white;
+    font-weight: 800;
+    border-radius: 10px;
+}
+.moreCars:hover {
+    background-color: white;
+    color: black;
 }
 .butSales {
     color: white;
@@ -227,9 +264,13 @@ nav ul li :active {
 
 /*WHY US*/
 .whyUs {
-    background-color:#fbbe4b;
+    background-color: #f6f6f6;
+    height: 400px;
     color:black;
-    margin: 50px 0;
+    margin: 80px 0;
+}
+.whyHd h2 {
+    font-size: 3em;
 }
 .whyUsSec {
     width: 90%;
@@ -237,8 +278,13 @@ nav ul li :active {
     margin-right: auto;
     display: flex;
     text-align: center;
-    box-shadow: 10px 10px 30px;
-    padding-top: 5%;
+    box-shadow: 10px 10px 30px gainsboro;
+    padding: 3% 0;
+
+    background-color: #fbbe4b;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
 }
 .whySec {
     width: 25%;
@@ -260,16 +306,20 @@ nav ul li :active {
 .whyNote {
     padding: 10px;
 }
+.whyNote h3 {
+    margin-bottom: 50px;
+}
 
 /*CONTACT US*/
+#contactUs {
+    margin: 100px 0;
+}
 .con {
     text-align: center;
     font-size: 2em;
     
 }
-#contactUs {
-    margin: 30px 0;
-}
+
 .subscribeHome {
     height: 200px;
 } 
@@ -289,8 +339,7 @@ nav ul li :active {
 }
 .regForm {
     width: 50%;
-    float: left;
-    background-color: #F4C3CB;
+    float: right;
 }
 .regDiv {
     padding: 20px;
@@ -300,15 +349,14 @@ nav ul li :active {
     padding: 15px;
     border-radius: 10px;
     margin: 10px 0;
-    border: 2px solid #F4C3CB;
+    border: 2px solid #fbbe4b;
     
 }
 #workType {
-    width: 25%;
-    padding: 10px 0;
-    margin: 10px;
+    width: 55%;
+    padding: 20px 0;
+    border: 2px solid #fbbe4b;
     border-radius: 10px;
-    background-color: #F4C3CB;
 }
 #fdate {
     width: 15%;
@@ -317,7 +365,6 @@ nav ul li :active {
 .reachUs {
     width: 50%;
     float: left;
-    background-color:#F4C3CB;
 }
 .reachDiv {
     padding: 20px;
@@ -327,8 +374,8 @@ nav ul li :active {
     width: 50%;
     padding: 15px;
     border-radius: 10px;
-    margin: 10px 0 5px 95px;
-    border: 2px solid #F4C3CB;
+    margin: 10px 0 5px 90px;
+    border: 2px solid #fbbe4b;
 
 }
 #cusFn {
@@ -355,6 +402,7 @@ footer{
     margin-top: -6px;
     padding-bottom: 30px;
     background-color: #fbbe4b;
+    
 }
 .footerDiv {
     width: 90%;
@@ -362,34 +410,42 @@ footer{
     margin-right: auto;
     padding-top: 5%;
     padding-bottom: 5%;
-    text-align: center;
-    
 }
 .footSecOne {
-    width: 26%;
+    width: 24%;
     float: left;
-    padding: 1% 5%;
     text-align: left;
-}
-.footImg {
-    border-radius: 50%;
+    padding: 10px;
 }
 .footSecTwo {
     width: 25%;
     float: left;
-    padding-top: 2%;
+    text-align: center;
+    margin-top: 20px;
 }
-.footSecTwo p a:link {
+.footSecTwo a:link {
     text-decoration: none;
     color: black;
+    font-size: 1.5em;
 }
-.footSecTwo p a:visited {
+.footSecTwo a:visited {
     color: black;
 }
-
 .footSecThr {
-    width: 26%;
+    width: 25%;
+    float: left;
+    text-align: left;
+    margin-top: 20px;
+}
+.footSecFour {
+    width: 24%;
     float: right;
-    padding: 1% 5%;
-    padding-top: 2%;
+    text-align: left;
+    margin-top: 20px;
+}
+.footSecFour img {
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+    
 }
