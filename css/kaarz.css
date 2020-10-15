@@ -15,7 +15,6 @@ nav {
 }
 .brandName {
     padding: 10px 30px;
-
 }
 .brandName img {
     border-radius: 50%;
@@ -26,9 +25,10 @@ nav {
     float: left;
 }
 nav ul {
-    float: right;
-    width: 55%;
-    padding: 10px 5px;   
+    float: left;
+    width: 40%;
+    padding: 10px 5px; 
+    margin-left: 35%;
 }
 nav ul li {
     list-style-type: none;
@@ -53,6 +53,13 @@ nav ul li :active {
     padding: 10px;
     background-color: goldenrod;
     color: black;
+}
+nav ol {
+    width: 12%;
+    border: 1px;
+    float: right;
+    list-style-type: none;
+    padding: 10px 5px;
 }
 .hrr {
     clear: both;
@@ -114,10 +121,6 @@ nav ul li :active {
 }
 .homBut a:visited {
     color: white;   
-}
-.homBut a:hover {
-    background-color: white;
-    color: goldenrod;   
 }
 
 /*About Us*/
@@ -318,6 +321,28 @@ nav ul li :active {
     font-size: 2em;   
     margin: 20px;
 }
+.subscribeHome {
+    height: 200px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+} 
+.subscribeHome div{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    
+}
+#subMail {
+    width: 40%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid #25282A;
+    font-size: 1em;
+    margin: 10px 0;
+}
 .regForm {
     width: 64%;
     float: right;
@@ -389,18 +414,20 @@ footer{
     padding-bottom: 5%;
 }
 .footSecOne {
-    width: 30%;
+    width: 35%;
     float: left;
     text-align: left;
+    margin-right: 5%;
 }
 .footSecOne div {
-    padding: 10px;
+    padding: 10px 30px;
 }
 .footSecTwo {
-    width: 20%;
+    width: 30%;
     float: left;
     text-align: center;
     margin-top: 20px;
+    margin-right: 5%;
 }
 .footSecTwo a:link {
     text-decoration: none;
@@ -415,20 +442,4 @@ footer{
     float: left;
     text-align: left;
     margin-top: 20px;
-}
-.subscribeHome {
-    width: 30%;
-    float: left
-}
-.subscribeHome div{
-    margin-top: 20px;
-    padding: 0px 10px;
-}
-#subMail {
-    width: 90%;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #fbbe4b;
-    font-size: .8em;
-    margin: 5px 0;
 }
