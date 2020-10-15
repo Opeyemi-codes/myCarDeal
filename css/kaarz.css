@@ -27,7 +27,7 @@ nav {
 }
 nav ul {
     float: right;
-    width: 45%;
+    width: 55%;
     padding: 10px 5px;   
 }
 nav ul li {
@@ -315,46 +315,28 @@ nav ul li :active {
 }
 .con {
     text-align: center;
-    font-size: 2em;
-    
-}
-
-.subscribeHome {
-    height: 200px;
-} 
-.subscribeHome div{
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-}
-#subMail {
-    width: 40%;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 1px solid #25282A;
-    font-size: 1em;
-    margin: 10px 0;
+    font-size: 2em;   
+    margin: 20px;
 }
 .regForm {
-    width: 50%;
+    width: 64%;
     float: right;
 }
 .regDiv {
     padding: 20px;
 }
 .regDiv input {
-    width: 50%;
-    padding: 15px;
+    width: 80%;
+    padding: 10px;
     border-radius: 10px;
-    margin: 10px 0;
-    border: 2px solid #fbbe4b;
+    margin: 5px 0;
+    border: 1px solid #f6f6f6;
     
 }
 #workType {
     width: 55%;
-    padding: 20px 0;
-    border: 2px solid #fbbe4b;
+    padding: 10px 0;
+    border: 2px solid #f6f6f6;
     border-radius: 10px;
 }
 #fdate {
@@ -362,24 +344,20 @@ nav ul li :active {
     padding: 10px;
 }
 .reachUs {
-    width: 50%;
+    width: 35%;
     float: left;
+    border: 5px solid grey;
 }
 .reachDiv {
-    padding: 20px;
-    margin: 0 0 7px 100px;
+    padding: 15px;
+    margin-left: 20px;
 }
 .reachDiv input {
-    width: 50%;
-    padding: 15px;
+    width: 70%;
+    padding: 10px;
     border-radius: 10px;
-    margin: 10px 0 5px 90px;
-    border: 2px solid #fbbe4b;
-
-}
-#cusFn {
-    margin-left: 5px;
-    font-weight: 800;
+    margin: 10px;
+    border: 2px solid #f6f6f6;
 }
 .ini {
     padding: 10px;
@@ -391,7 +369,7 @@ nav ul li :active {
     display: inline;
 }
 .reportt {
-    margin-top: 35px;
+    margin-top: 10px;
 }
 
 /*FOOTER*/
@@ -401,7 +379,7 @@ footer{
     margin-top: -6px;
     padding-bottom: 30px;
     background-color: #fbbe4b;
-    
+    color: white;
 }
 .footerDiv {
     width: 90%;
@@ -411,40 +389,46 @@ footer{
     padding-bottom: 5%;
 }
 .footSecOne {
-    width: 24%;
+    width: 30%;
     float: left;
     text-align: left;
+}
+.footSecOne div {
     padding: 10px;
 }
 .footSecTwo {
-    width: 25%;
+    width: 20%;
     float: left;
     text-align: center;
     margin-top: 20px;
 }
 .footSecTwo a:link {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.5em;
 }
 .footSecTwo a:visited {
-    color: black;
+    color: white;
 }
 .footSecThr {
-    width: 25%;
+    width: 20%;
     float: left;
     text-align: left;
     margin-top: 20px;
 }
-.footSecFour {
-    width: 24%;
-    float: right;
-    text-align: left;
-    margin-top: 20px;
+.subscribeHome {
+    width: 30%;
+    float: left
 }
-.footSecFour img {
-    width: 70px;
-    height: 60px;
-    border-radius: 5px;
-    
+.subscribeHome div{
+    margin-top: 20px;
+    padding: 0px 10px;
+}
+#subMail {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fbbe4b;
+    font-size: .8em;
+    margin: 5px 0;
 }
