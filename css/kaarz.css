@@ -45,13 +45,11 @@ nav ul li a:visited {
 }
 nav ul li a:hover {
     padding: 10px;
-    background-color:#fbbe4b;
-    color: white;
-    border-radius: 10px;
+    font-weight: 1000;
+    color: black;
 }
 nav ul li :active {
     padding: 10px;
-    background-color: goldenrod;
     color: black;
 }
 nav ol {
@@ -75,6 +73,8 @@ nav ol {
     height: 600px;
     background-size: cover;
     position: relative;
+    
+    
 }
 .overlay {
     background-color: rgb(128, 128, 128, 0.5);
@@ -223,14 +223,15 @@ nav ol {
     padding: 10px;
 }
 .moreCars {
-    padding: 20px;
-    width: 180px;
+    padding: 15px;
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
     background-color: #fbbe4b;
     transition-duration: 0.6s;
     color: white;
     font-weight: 800;
+    font-size: 1em;
     border-radius: 10px;
 }
 .moreCars:hover {
@@ -242,7 +243,7 @@ nav ol {
     border-radius: 5px;
     font-weight: 800;
     border: none;
-    margin: 20px 5px;
+    margin: 15px 5px;
     display: inline;
     font-size: .8em;
 }
@@ -267,9 +268,9 @@ nav ol {
 /*WHY US*/
 .whyUs {
     background-color: #f6f6f6;
-    height: 400px;
+    height: 460px;
     color:black;
-    margin: 80px 0;
+    margin: 80px 0 30px 0;
 }
 .whyHd h2 {
     font-size: 3em;
@@ -280,18 +281,11 @@ nav ol {
     margin-right: auto;
     display: flex;
     text-align: center;
-    box-shadow: 10px 10px 30px gainsboro;
-    padding: 3% 0;
-
-    background-color: #fbbe4b;
-    color: white;
-    border-radius: 5px;
+    color: black;
     font-size: 1em;
 }
 .whySec {
     width: 25%;
-    height: 320px;
-    
 }
 .whySec img {
     width: 100px;
@@ -314,38 +308,71 @@ nav ol {
 
 /*CONTACT US*/
 #contactUs {
-    margin: 100px 0;
+    margin: 10px 0;
 }
 .con {
     text-align: center;
     font-size: 2em;   
-    margin: 20px;
+    margin: 5px;
+}
+.sp {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#spOne{
+    width: 180px;
+    color: white;
+    background-color: #fbbe4b;
+    border: 1px solid #fbbe4b;
+    padding: 10px;
+    border-radius: 20px 0 20px 0;
+    font-weight: 800;
+    margin-right: 10px;
+}
+#spTwo{
+    width: 150px;
+    color: white;
+    background-color: #fbbe4b;
+    border: 1px solid #fbbe4b;
+    padding: 10px;
+    border-radius: 20px 0 20px 0;
+    font-weight: 800;
+    margin-left: 10px;
+}
+.subGrp {
+    background-color: #fbbe4b;
+
 }
 .subscribeHome {
-    height: 200px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    color: black;
+    color: white;
+    padding: 60px;
 } 
 .subscribeHome div{
     width: 80%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    
 }
 #subMail {
     width: 40%;
-    padding: 10px 30px;
+    padding: 10px 25px;
     border-radius: 10px;
     border: 1px solid #25282A;
     font-size: 1em;
-    margin: 10px 0;
+    margin-top: 50px;
 }
-.regForm {
-    width: 64%;
-    float: right;
+#regForm {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
 }
 .regDiv {
     padding: 20px;
@@ -354,9 +381,8 @@ nav ol {
     width: 80%;
     padding: 10px;
     border-radius: 10px;
-    margin: 5px 0;
+    margin: 5px 0 10px 0;
     border: 1px solid #f6f6f6;
-    
 }
 #workType {
     width: 55%;
@@ -368,10 +394,11 @@ nav ol {
     width: 15%;
     padding: 10px;
 }
-.reachUs {
-    width: 35%;
-    float: left;
-    border: 5px solid grey;
+#reachUs {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
 }
 .reachDiv {
     padding: 15px;
@@ -381,7 +408,8 @@ nav ol {
     width: 70%;
     padding: 10px;
     border-radius: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
     border: 2px solid #f6f6f6;
 }
 .ini {
@@ -403,7 +431,7 @@ footer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: -6px;
     padding-bottom: 30px;
-    background-color: #fbbe4b;
+    background-color: #0b031b;
     color: white;
 }
 .footerDiv {
@@ -433,6 +461,7 @@ footer{
     text-decoration: none;
     color: white;
     font-size: 1.5em;
+    margin: 0 10px;
 }
 .footSecTwo a:visited {
     color: white;
