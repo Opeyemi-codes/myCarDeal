@@ -12,6 +12,7 @@ nav {
     height: 80px;
     border-bottom: 1px solid ghostwhite;
     z-index: 50;
+    top: 0;
 }
 .brandName {
     padding: 10px 30px;
@@ -26,9 +27,9 @@ nav {
 }
 nav ul {
     float: left;
-    width: 40%;
+    width: 45%;
     padding: 10px 5px; 
-    margin-left: 35%;
+    margin-left: 30%;
 }
 nav ul li {
     list-style-type: none;
@@ -66,47 +67,12 @@ nav ol {
 
 /*HOME*/
 
-#home {
-    margin-top: 5%;
-    background-image: url('../images/carz.png');
-    background-repeat: no-repeat;
-    height: 600px;
-    background-size: cover;
-    position: relative;
-    
-    
-}
-.overlay {
-    background-color: rgb(128, 128, 128, 0.5);
-    position:absolute;
-    width: 100%;
-    height: 600px;
-    
-}
-.hom {
-    padding: 50px;
-    text-align: center;
-}
-.hom p {
-    font-size: 1.5em;
-    color: white;
-    display: inline;
-}
-.homeB {
-    font-size: 1.5em;
-    color: #fbbe4b;
-    padding: 15px 20px;
-    border-radius: 5px;
-    border: 1px solid white;
-    display:inline;
-}
-.ome {
-    border: 1px solid white;
-    padding: 15px 15px;
-    border-radius: 10px;
-    margin-right: 20px;
+.mySlides {
+    height: 700px;
+    width: 1400px;
 
 }
+
 .homBut a{
     background-color: #fbbe4b;
     padding: 15px 15px;
@@ -123,7 +89,7 @@ nav ol {
     color: white;   
 }
 
-/*About Us*/
+/*About Us
 .aboutUs {
     background-color: #0c0a0aa4;
     height: 450px;
@@ -158,7 +124,7 @@ nav ol {
     height: 450px;
     overflow: hidden;
 }
-
+*/
 /*PARTNERS*/
 .partner {
     width: 80%;
@@ -172,10 +138,9 @@ nav ol {
     text-align: center;
 }
 .partNote h2 {
-    font-weight: 800;
-    font-size: 3em;
+    font-size: 1.5em;
 }
-.saless img{
+.saless img {
     width: 160px;
     height: 120px;
 }
@@ -198,18 +163,9 @@ nav ol {
     margin-top: 5%;
     margin-bottom: 3%;
 }
-.america {
-    text-align: center;    
-    color: black;
-    font-weight: 800;
-    margin-bottom: .5%;
-    margin-top: 2%;
-    font-size: 1.5em;
-    padding: 20px 0;  
-}
 .galCard {
-    width: 25%;
-    height: 250px;
+    width: 33%;
+    height: 320px;
     text-align: center;
     
 }
@@ -223,8 +179,7 @@ nav ol {
     padding: 10px;
 }
 .moreCars {
-    padding: 15px;
-    width: 150px;
+    padding: 15px 50px;
     margin-left: auto;
     margin-right: auto;
     background-color: #fbbe4b;
@@ -233,6 +188,7 @@ nav ol {
     font-weight: 800;
     font-size: 1em;
     border-radius: 10px;
+    border: 2px solid #fbbe4b;
 }
 .moreCars:hover {
     background-color: white;
@@ -252,7 +208,7 @@ nav ol {
     background-color: #0b031b;
     border-radius: 5px;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 30px;
 }
 .butSales a:visited{
     color: white;
@@ -268,12 +224,11 @@ nav ol {
 /*WHY US*/
 .whyUs {
     background-color: #f6f6f6;
-    height: 460px;
     color:black;
-    margin: 80px 0 30px 0;
+    padding: 60px 0;
 }
 .whyHd h2 {
-    font-size: 3em;
+    font-size: 1.5em;
 }
 .whyUsSec {
     width: 90%;
@@ -286,13 +241,11 @@ nav ol {
 }
 .whySec {
     width: 25%;
+    padding: 10px;
 }
 .whySec img {
-    width: 100px;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 20px 0 10px 0;
+    width: 50px;
+    height: 40px;
     border-radius: 5px;
 }
 .whyHd {
@@ -302,17 +255,17 @@ nav ol {
 .whyNote {
     padding: 10px;
 }
-.whyNote h3 {
-    margin-bottom: 50px;
+.whyNote h4 {
+    margin-bottom: 20px;
 }
 
 /*CONTACT US*/
 #contactUs {
-    margin: 10px 0;
+    margin: 50px 0;
 }
 .con {
     text-align: center;
-    font-size: 2em;   
+    font-size: 1.5em;   
     margin: 5px;
 }
 .sp {
@@ -324,35 +277,42 @@ nav ol {
     margin-bottom: 2%;
 }
 #spOne{
-    width: 180px;
-    color: white;
-    background-color: #fbbe4b;
-    border: 1px solid #fbbe4b;
+    display: inline-block;
     padding: 10px;
-    border-radius: 20px 0 20px 0;
-    font-weight: 800;
-    margin-right: 10px;
+    border: none;
+    background-color: white;
 }
+
 #spTwo{
-    width: 150px;
-    color: white;
-    background-color: #fbbe4b;
-    border: 1px solid #fbbe4b;
+    display: inline-block;
+    border: none;
     padding: 10px;
-    border-radius: 20px 0 20px 0;
+    background-color: white;
+}
+.sp>button:not(.active):hover {
+    box-shadow: 2px -2px 20px 5px
+#f6f6f6;
+}
+.active {
     font-weight: 800;
-    margin-left: 10px;
+    box-shadow: 2px 5px 5px
+    #f6f6f6;
 }
 .subGrp {
     background-color: #fbbe4b;
 
+}
+.reachArea {
+    padding: 10px; 
+    margin-top: 30px;margin-bottom: 10px;
+    border: 2px solid #f2f2f2;
 }
 .subscribeHome {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     color: white;
-    padding: 60px;
+    padding: 100px 0;
 } 
 .subscribeHome div{
     width: 80%;
@@ -369,43 +329,38 @@ nav ol {
     margin-top: 50px;
 }
 #regForm {
-    width: 60%;
-    margin-right: auto;
+    width: 40%;
+    display: block;
     margin-left: auto;
-    display: none;
-}
-.regDiv {
-    padding: 20px;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 .regDiv input {
     width: 80%;
     padding: 10px;
+    margin: 10px 0;
     border-radius: 10px;
-    margin: 5px 0 10px 0;
-    border: 1px solid #f6f6f6;
+    border: 2px solid #f6f6f6;
 }
 #workType {
-    width: 55%;
-    padding: 10px 0;
+    width: 83%;
+    padding: 10px 10px;
     border: 2px solid #f6f6f6;
     border-radius: 10px;
 }
 #fdate {
-    width: 15%;
+    width: 47%;
     padding: 10px;
 }
 #reachUs {
-    width: 50%;
+    width: 30%;
+    display: none;
     margin-left: auto;
     margin-right: auto;
-    display: none;
-}
-.reachDiv {
-    padding: 15px;
-    margin-left: 20px;
+    margin-bottom: 50px;
 }
 .reachDiv input {
-    width: 70%;
+    width: 100%;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -418,11 +373,16 @@ nav ol {
     font-weight: 800;
     color: gray;
 }
-.asterik {
-    display: inline;
-}
-.reportt {
-    margin-top: 10px;
+
+.formSales {
+    padding: 10px 30px;
+    color: white;
+    background-color: #fbbe4b;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 800;
+    margin-top: 20px;
+
 }
 
 /*FOOTER*/
@@ -472,3 +432,46 @@ footer{
     text-align: left;
     margin-top: 20px;
 }
+/*
+.abouty {
+    height: 300px;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+
+
+}
+.bot {
+    width: 33%;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin: 5px;
+}
+.bot img {
+    width: 90%;
+    height: 250px;
+
+}
+.bott {
+    width: 60%;
+    position: absolute;
+    background-color: grey;
+    bottom: 40px;
+    left: 0;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
