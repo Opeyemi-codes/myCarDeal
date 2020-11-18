@@ -143,10 +143,11 @@ nav ol {
 .saless img {
     width: 160px;
     height: 120px;
+
 }
 .saless {
     display: flex;
-    width: 95%;
+    width: 94%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -289,11 +290,11 @@ nav ol {
     padding: 10px;
     background-color: white;
 }
-.sp>button:not(.active):hover {
+.sp>button:not(.activev):hover {
     box-shadow: 2px -2px 20px 5px
 #f6f6f6;
 }
-.active {
+.activev {
     font-weight: 800;
     box-shadow: 2px 5px 5px
     #f6f6f6;
@@ -304,7 +305,8 @@ nav ol {
 }
 .reachArea {
     padding: 10px; 
-    margin-top: 30px;margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 2px solid #f2f2f2;
 }
 .subscribeHome {
@@ -329,28 +331,30 @@ nav ol {
     margin-top: 50px;
 }
 #regForm {
-    width: 40%;
+    width: 34%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
 }
 .regDiv input {
-    width: 80%;
+    width: 90%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 10px;
     border: 2px solid #f6f6f6;
 }
 #workType {
-    width: 83%;
+    width: 90%;
     padding: 10px 10px;
     border: 2px solid #f6f6f6;
     border-radius: 10px;
 }
 #fdate {
-    width: 47%;
+    width: 50%;
     padding: 10px;
+    margin: 0 0 0 20px;
+    text-align: center;
 }
 #reachUs {
     width: 30%;
@@ -382,7 +386,18 @@ nav ol {
     border-radius: 10px;
     font-weight: 800;
     margin-top: 20px;
+    border: none;
 
+}
+.formSaless {
+    padding: 10px 30px;
+    color: white;
+    background-color: #fbbe4b;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 800;
+    margin-top: 20px;
+    border: 3px unset #fbbe4b;
 }
 
 /*FOOTER*/
@@ -408,13 +423,13 @@ footer{
     margin-right: 5%;
 }
 .footSecOne div {
-    padding: 10px 30px;
+    padding: 0 30px;
 }
 .footSecTwo {
     width: 30%;
     float: left;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 5%;
 }
 .footSecTwo a:link {
@@ -430,7 +445,7 @@ footer{
     width: 20%;
     float: left;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 /*
 .abouty {

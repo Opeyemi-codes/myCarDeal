@@ -288,7 +288,7 @@
             </div>
             <div class="">
                 <div class="sp">
-                    <button id="spOne" onclick="myFunction1(this)" class="active">Book an appointment</button>
+                    <button id="spOne" onclick="myFunction1(this)" class="activev">Book an appointment</button>
                     <button id="spTwo" onclick="myFunction2(this)">Send us a message</button>
                 </div>
                 <section id="regForm">
@@ -305,8 +305,10 @@
                                 <option value="p4">Car checkup</option>
                             </select>
                         <hr class="hrr">
-                        <p class="asterik"><label>Date to bring your car: <input type="date" placeholder="00.00.0000" id="fdate"></label> <br />
-                            <input type="text" placeholder="Your address for pick up..." id="report"> </textarea>
+                        <p style="margin-bottom: 0;">
+                            Date to bring your car: <input type="date" placeholder="00.00.0000" id="fdate">
+                        </p> <br />
+                            <input type="text" placeholder="Your address for pick up..." id="report"> </textarea><br />
                         <button class="formSales" type="submit">SUBMIT</button>
                     </form>
                 </section>
@@ -314,10 +316,8 @@
                     <form action="#" method="POST" class="reachDiv">
                         <input type="text" placeholder="customer full name" id="cusFn" required>
                         <input type="email" placeholder="input your email address" id="emailad"> 
-                        <hr class="hrr">
-                        <aside class="reportt">
-                            <textarea name="comment" placeholder="Your message..." cols="43" rows="3" class="reachArea" required> </textarea>
-                        </aside>
+                        
+                        <textarea placeholder="Your message..." cols="40" rows="3" class="reachArea" required> </textarea>
                         <button class="formSales"  type="submit">SUBMIT</button>
                     </form>
                 </section>
@@ -331,7 +331,7 @@
                         Subscribe for updates on our new purchase(s). Be the first to know what products we have in stock.
                     </p>
                     <input type="email" name="subscribe" id="subMail" placeholder="example@kaarz.com" >
-                    <button type="submit" value="submit" class="formSales">Subscribe</button> 
+                    <button type="submit" value="submit" class="formSaless">Subscribe</button> 
                 </div>
             </section>
         </div>
@@ -340,7 +340,7 @@
         <div class="footerDiv">
             <section class="footSecOne">
                 <div>
-                    <h2 style="font-size: 3em; padding-bottom: 10%;"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Kaarz</h2>
+                    <h2 style="font-size: 2.5em; padding-bottom: 10%;">Kaarz</h2>
                     <p id="aboutUs" style="font-size: .8em;">
                         Kaarz car dealing company is your best option when it comes to buying a new car, repair of your car(s), servicing of your car(s). We are a well organized car company with experience in the dealing of brand new car, for its customers.
                     </p>
@@ -348,7 +348,7 @@
             </section>
             <section class="footSecThr">
                 <h3 style="font-size: 2em; padding-bottom: 10%;">Contact Us</h3>
-                    <div style="font-size: .8em; margin-top: 5%;">
+                    <div style="font-size: .8em; margin-top: 7%;">
                         <p>contactus@kaarz.com</p>
                         <p> 1123 Boston tower,<br /> opposite stanbic bank, Surulere, <br />Lagos.</p>
                         <p> +234 4443 335 454 </p>
@@ -377,14 +377,14 @@
         function myFunction1(button) {
             document.getElementById("regForm").style.display ="block";
             document.getElementById("reachUs").style.display = "none";
-            button.classList.add("active");
-            button.nextElementSibling.classList.remove("active");
+            button.classList.add("activev");
+            button.nextElementSibling.classList.remove("activev");
         }
         function myFunction2(button) {
             document.getElementById("regForm").style.display = "none";
             document.getElementById("reachUs").style.display = "block";
-            button.classList.add("active");
-            button.previousElementSibling.classList.remove("active");
+            button.classList.add("activev");
+            button.previousElementSibling.classList.remove("activev");
         }
 
     </script>
